@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 import UIKit
 import PlaygroundSupport
+import SwiftyJSON
 
 // Set up the URL request
 func makeGetCall() {
@@ -47,7 +48,7 @@ func makeGetCall() {
             for item in res_data {
                 guard let wpJsonDescription = item["wpJsonDescription"] as? String else { return }
                 print(wpJsonDescription)
-                print("------")
+                print("---zab---")
             }
             
         } catch  {
