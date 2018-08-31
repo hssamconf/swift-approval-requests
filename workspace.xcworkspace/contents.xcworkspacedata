@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testSwiftyJSON.playground">
+   </FileRef>
+   <FileRef
       location = "group:SwiftyJSON.xcodeproj">
    </FileRef>
    <FileRef
