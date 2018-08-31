@@ -48,7 +48,7 @@ func makeGetCall() {
             for item in res_data {
                 guard let wpJsonDescription = item["wpJsonDescription"] as? String else { return }
                 print(wpJsonDescription)
-                print("---zab---")
+                print("------")
             }
             
         } catch  {
