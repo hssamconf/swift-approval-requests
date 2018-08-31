@@ -49,6 +49,16 @@ func makeGetCall() {
                 guard let wpJsonDescription = item["wpJsonDescription"] as? String else { return }
                 print(wpJsonDescription)
                 print("------")
+                
+                let wpJsonDescription_data = wpJsonDescription.data(using: String.Encoding.utf8, allowLossyConversion: false)!
+                guard let converted_wpJsonDescription = try JSONSerialization.jsonObject(with: wpJsonDescription_data, options: [])
+                    as? [String: Any] else {
+                        print("error trying to convert data to JSON")
+                        return
+                }
+                
+                print(converted_wpJsonDescription)
+                print("----------**************")
             }
             
         } catch  {
